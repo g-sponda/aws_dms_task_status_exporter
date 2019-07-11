@@ -1,6 +1,6 @@
 from aws_dms_task_status_exporter.aws import get_status_replication_tasks
 from prometheus_client import Histogram
-from prometheus_client.core import GaugeMetricFamily, REGISTRY
+from prometheus_client.core import GaugeMetricFamily
 
 states = {
     "failed": 0,
