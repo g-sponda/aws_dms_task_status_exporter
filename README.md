@@ -42,7 +42,7 @@ docker build -t aws_dms_task_status_exporter .
 ```
 
 ```
-docker run -itd --name exporter -p 9213:9213 -e ACCESS_KEY="<ACCESS_KEY>" -e SECRET_KEY="<SECRET_KEY>" -e REGION="<REGION>" aws_dms_task_status_exporter:latest
+docker run -itd --name exporter -p 9213:9213 -e AWS_ACCESS_KEY="<AWS_ACCESS_KEY>" -e AWS_SECRET_KEY="<AWS_SECRET_KEY>" -e REGION="<REGION>" aws_dms_task_status_exporter:latest
 ```
 
 To see the metrics, you can access: 
